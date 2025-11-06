@@ -1,3 +1,5 @@
+
+
 # Create indexes to speed up join
 CREATE INDEX idx_tempdata_circ
 ON temp_data (
