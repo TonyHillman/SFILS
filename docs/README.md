@@ -66,6 +66,8 @@ Ensure you have the following:
 
 3. Create and Load Database
 
+First move the .csv file from app folder to Uploads folder  -  SFPL_DataSF_library-usage_Jan_2023_CLEAN.csv to C:\ProgramData\MySQL\MySQL Server 8.0\Uploads
+
 Now run the following scripts located in SFILS/scripts folder in the following order
 using a MySQL account with admin privileges:
 
@@ -112,3 +114,6 @@ Key 9 allows users to exit the interface and close the program
 
 Ensure scripts are run in the order outlined above.
 PrettyTable is used for CLI terminal readability.
+
+There is a known bug with the last insertion in loadData.sql, 
+if the transaction doesn't complete then the application will not function properly.
