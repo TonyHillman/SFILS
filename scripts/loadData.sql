@@ -1,6 +1,4 @@
-USE library_db;
 
-SHOW VARIABLES LIKE 'secure_file_priv';
 
 LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/SFPL_DataSF_library-usage_Jan_2023_CLEAN.csv'
 INTO TABLE temp_data
@@ -29,5 +27,4 @@ SET
   email_provided = IF(LOWER(@email_provided) IN ('true', '1'), 1, 0),
   within_sf_county = IF(LOWER(@within_sf_county) IN ('true', '1'), 1, 0);
 
-SELECT COUNT(*) FROM temp_data;
 

@@ -1,4 +1,3 @@
-USE library_db;
 
 
 CREATE TABLE PATRON_TYPE (
@@ -12,7 +11,7 @@ CREATE TABLE HOME_LIBRARY (
 );
 
 CREATE TABLE NOTICE_PREFERENCE (
-    notice_preference_code CHAR(3) PRIMARY KEY,
+    notice_preference_code CHAR(5) PRIMARY KEY,
     notice_definition CHAR(10) NOT NULL
 );
 

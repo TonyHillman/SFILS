@@ -1,8 +1,7 @@
 
+CREATE DATABASE library_test_db;
 
-CREATE DATABASE library_db;
-
-USE library_db;
+USE library_test_db;
 
 CREATE TABLE temp_data (
     patron_type_code TINYINT,
@@ -20,4 +19,3 @@ CREATE TABLE temp_data (
     within_sf_county BOOLEAN,
     year_registered YEAR
 );
-

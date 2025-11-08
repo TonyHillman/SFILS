@@ -1,4 +1,5 @@
-
+# Run this all together
+START TRANSACTION;
 
 # Create indexes to speed up join
 CREATE INDEX idx_tempdata_circ
@@ -22,9 +23,6 @@ ON PATRON (
     within_sf_county,
     year_registered
 );
-
-# Run this all together
-START TRANSACTION;
 
 # Insert lookup tables first
 INSERT INTO PATRON_TYPE (patron_type_code, patron_type_definition)
