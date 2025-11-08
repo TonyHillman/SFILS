@@ -12,7 +12,7 @@ CREATE TABLE temp_data (
     age_range VARCHAR(25),
     home_library_code CHAR(5),
     home_library_name VARCHAR(50),
-    circulation_active_month YEAR NULL,
+    circulation_active_month CHAR(9) NULL,
     circulation_active_year YEAR NULL,
     notice_preference_code CHAR(5),
     notice_definition CHAR(10),
