@@ -85,7 +85,7 @@ Now run the following:
 
 python mongo/import_data.py
 
-5. Run the application
+4. Run the application
 
 Make sure working directory is set to SFILS
 
@@ -106,6 +106,6 @@ Key 9 allows users to exit the interface and close the program
 *** NEW Key 10 allows users to view activity records for unique patrons, using _ID field in MongoDB.
 Easiest way to use is copy and paste the id when prompted.
 
-6. Additional Notes
+5. Additional Notes
 
 
