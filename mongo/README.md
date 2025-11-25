@@ -108,4 +108,8 @@ Easiest way to use is copy and paste the id when prompted.
 
 5. Additional Notes
 
+The lookup tables from the MySQL version were denormalized into the Patrons collection but CLI functionality 
+was preserved. Added a new function in this version of the CLI because I realized my queries were not
+using the circulation_activity collection. Otherwise, the CLI app has the same functionality as the MySQL 
+version with queries rewritten in MongoDB syntax.
 
