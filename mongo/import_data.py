@@ -1,6 +1,7 @@
 import pandas as pd
 from pymongo import MongoClient
 import math
+import os
 
 # Deals with empty columns, stores data as int or NULL
 def safe_int(val):
@@ -12,9 +13,8 @@ db = client.SFILS_db
 patrons_collection = db.patrons
 activity_collection = db.circulation_activity
 
-df = pd.read_csv(
-    r"C:\Users\tonyh\Documents\GitHub\SFILS\app\SFPL_DataSF_library-usage_Jan_2023_CLEAN.csv"
-)
+CSV_PATH = os.path.join(os.path.dirname(__file__), "SFPL_DataSF_library-usage_Jan_2023_CLEAN.csv")
+df = pd.read_csv(CSV_PATH)
 
 # Use these columns to define unique patrons
 patron_columns = [
